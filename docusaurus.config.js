@@ -52,7 +52,7 @@ const config = {
   //预设
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         //文档相关（侧边栏sidebars.js，编辑连接editUrl）

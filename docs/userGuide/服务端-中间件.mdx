@@ -3,8 +3,72 @@ title: 服务端-中间件
 sidebar_position: 4
 ---
 
-## 一、业务参数
+import React from 'react';
+import '../../src/css/style.css'; // 导入 CSS 文件
 
-## 二、防诈骗
+## 一、登录
+<p>
+打开“交换机通讯管理系统“软件，进入登录界面<br />
+用户名：admin<br />
+密  码：88888<br />
+点击“登录“  进入程序
+</p>
+<img src={require('@site/static/img/userGuide/manageBill/1.png').default} alt=""/>
+<img src={require('@site/static/img/userGuide/manageBill/2.png').default} alt=""/>
+<p>
+注：开通中间件功能后，如上图所示会出现中间件功能模块，点击此处可以对中间件相关参数进行设置
+</p>
+<img src={require('@site/static/img/userGuide/manageMiddle/1.png').default} alt=""/>
 
-## 三、防骚扰
+
+## 二、业务参数
+<p>
+业务参数主要有：附加费/税费、房态设置、入住/退房、叫醒设置、电话限额<br />
+附加费/税费该功能体现在退房时的电话账单中；退房时自动弹出客房的电话账单，可显示通话明细并支持打印功能
+</p>
+<img src={require('@site/static/img/userGuide/manageMiddle/2.png').default} alt=""/>
+<strong style={{ marginLeft:"23em"}}>附加费/税费</strong>
+
+<p>
+房态设置：可自定义房态名称、代表颜色
+</p>
+<img src={require('@site/static/img/userGuide/manageMiddle/3.png').default} alt=""/>
+<strong style={{ marginLeft:"23em"}}>房态设置</strong>
+
+<p>
+入住/退房可设置入住、退房时房态动作及分机动作的默认值
+</p>
+<img src={require('@site/static/img/userGuide/manageMiddle/4.png').default} alt=""/>
+<strong style={{ marginLeft:"23em"}}>入住退房设置</strong>
+
+<p>
+叫醒设置：可设置叫醒功能的重试次数、间隔时间
+</p>
+<img src={require('@site/static/img/userGuide/manageMiddle/5.png').default} alt=""/>
+<strong style={{ marginLeft:"23em"}}>叫醒设置</strong>
+
+<p>
+电话限额：设置话费的限制额度
+</p>
+<img src={require('@site/static/img/userGuide/manageMiddle/6.png').default} alt=""/>
+<strong style={{ marginLeft:"23em"}}>电话限额</strong>
+
+## 三、防诈骗
+<p>
+防诈骗预警是在分机在规定时间内拨打超过规定次数，可以对分机进行相应的权限降级、客户端弹屏提示以及计费客户端弹屏提示等相关应急措施
+</p>
+<img src={require('@site/static/img/userGuide/manageMiddle/7.png').default} alt=""/>
+
+
+
+## 四、防骚扰
+
+<p>
+防骚扰预警是在分机在规定时间内拨打超过规定次数，可以对分机进行相应的计费客户端弹屏提示以及话务台客户端弹屏提示等相关应急措施
+</p>
+<img src={require('@site/static/img/userGuide/manageMiddle/8.png').default} alt=""/>
+
+
+
+
+
