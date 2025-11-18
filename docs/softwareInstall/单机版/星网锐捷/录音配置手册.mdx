@@ -14,14 +14,14 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 用户名： <span class="red">user_xuyh</span><br />
 密码：<span class="red">gs4008111108</span>
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/1.png').default} alt="" />
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/1.png').default} alt="" style={{maxWidth: "80%"}}/>
 
 
 ### 2、添加API的访问控制
 <p>
 系统管理---访问控制，添加API的访问控制，如下图
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/2.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/2.png').default} alt="" style={{maxWidth: "60%"}}/>
 
 
 ### 3、系统时间
@@ -29,21 +29,21 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 系统管理---系统时间<br />
 系统时间和服务器时间要一致，点击设为PC时间
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/3.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/3.png').default} alt="" style={{maxWidth: "80%"}}/>
 
 
 ## 二、配置交换机通讯管理系统
 <p>
 先在C盘新建一文件夹，命名为CDRfILE，存放生成的计费文件
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/4.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/4.png').default} alt="" style={{maxWidth: "80%"}}/>
 
 
 <p>
 打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置<br />
 <span class="red">注意：在打开之前，右键单机“BillCommon”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：</span>
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/5.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/5.png').default} alt="" style={{maxWidth: "80%"}}/>
 
 
 ### 1、服务器设置
@@ -51,22 +51,23 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 本机信息-IP地址，例如：192.168.6.27（是安装软件的服务器IP地址）<span class="red">注：此IP地址要与IPPBX地址互联互通</span><br />
 数据库信息-IP地址：localhost，测试连接---成功---保存
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/6.png').default} alt=""/>·<br />>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/7.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/6.png').default} alt="" style={{maxWidth: "50%"}}/>
+<br /><br /><br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/7.png').default} alt="" style={{marginLeft:"8em" ,maxWidth: "40%"}}/>
 
 ### 2、配重登录页面
 <p>
 (1)用户名：admin，密码：8888<br />
 选上记住密码和自动登录，点击登录
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/8.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/8.png').default} alt="" style={{maxWidth: "50%"}}/>
 
 
 
 <p>
 (2)下图为管理端首页面
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/9.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/9.png').default} alt="" style={{maxWidth: "80%"}}/>
 
 
 ### 3、交换机设置
@@ -79,13 +80,13 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 通讯方式：<span class="red">文本文档</span><br />
 计费文件路径：<span class="red">选择之前在C盘新建的CDRfILE文件夹</span><br />
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/10.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/10.png').default} alt="" style={{maxWidth: "80%"}}/>
 
 <p>
 <strong>FTP设置</strong><br />
 在电脑中输入ftp://星网IP:21/，看是否可以访问星网cdr文件
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/11.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/11.png').default} alt="" style={{maxWidth: "80%"}}/>
 
 
 <p>
@@ -97,7 +98,7 @@ IP地址：<span class="red">星网ippbx的IP地址</span><br />
 远程路径：<span class="red">/</span><br />
 本地路径：<span class="red">C:\CDRFILE|cdr</span><br />
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/12.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/12.png').default} alt="" style={{maxWidth: "70%"}}/>
 
 <p>
 点击“保存”---然后“启动”
@@ -115,7 +116,7 @@ IP地址：<span class="red">星网ippbx的IP地址</span><br />
 然后点击“保存”<br />
 举例如下图所示：
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/13.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/13.png').default} alt="" style={{maxWidth: "70%"}}/>
 
 <p>
 <strong>APT通讯连接</strong><br />
@@ -125,7 +126,7 @@ IP地址：<span class="red">星网ippbx的IP地址</span><br />
 密码：<span class="red">HTTP API的连接账号密码</span><br />
 设置好后 点击“保存”
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/14.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/14.png').default} alt="" style={{maxWidth: "80%"}}/>
 
 
 ### 4、通讯连接
@@ -137,7 +138,7 @@ IP地址：<span class="red">星网ippbx的IP地址</span><br />
 用户名：<span class="red">在星网ippbx上新建的HTTP API的连接账号</span><br />
 密码：<span class="red">HTTP API的连接账号密码</span><br />
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/15.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/15.png').default} alt="" style={{maxWidth: "80%"}}/>
 
 
 ### 5、分机信息
@@ -148,7 +149,7 @@ IP地址：<span class="red">星网ippbx的IP地址</span><br />
 下拉选择要录音的类型 分为：查询全部录音和不查询内线录音<br />
 录音类型：自动录音
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/16.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/16.png').default} alt="" style={{maxWidth: "70%"}}/>
 
 
 ### 6、录音设置---存储参数
@@ -162,7 +163,7 @@ C:\ProgramFiles(x86)\BillCommonSetupManage\Manage\pbxrecord\pbxrecord\
 <span class="red">注：通常应选择存储空间剩余最大的分区（例如设置为D盘）。</span><br />先点击保存再点击发布<br />
 <span class="red">最后点击“发布”按钮并重启服务端，这样web访问才能查听录音</span>
 </p>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/17.png').default} alt=""/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/17.png').default} alt="" style={{maxWidth: "80%"}}/>
 
 
 ### 7、Web查听录音
