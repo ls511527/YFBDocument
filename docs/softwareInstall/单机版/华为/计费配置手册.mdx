@@ -11,35 +11,35 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 
 （1）输入华为IP地址：192.168.6.7，进入华为IPPBX界面
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/1.png').default} alt="" style={{maxWidth: "70%"}}/>
-<br /><br /><br />
+<br />
 
 （2）点击右上角“进入管理员管理系统”，输入用户名密码点击登录  
 &nbsp;&nbsp;&nbsp;&nbsp;用户名：admin &nbsp;&nbsp;&nbsp;&nbsp;密码：Change_Me
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/2.png').default} alt="" style={{maxWidth: "60%"}}/>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/3.png').default} alt="" style={{maxWidth: "60%"}}/>
-<br /><br /><br />
+<br />
 
 （3）在系统管理中对Telnet服务进行配置
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/4.png').default} alt="" style={{maxWidth: "90%"}}/>
-<br /><br /><br />
+<br />
 
 （4）将Telnet服务开关打开，并点击保存
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/5.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 （5）点击右上角“保存数据”
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/6.png').default} alt="" style={{maxWidth: "90%"}}/>
-<br /><br /><br />
+<br />
 
 （6）在控制面板---程序---启用或关闭Windows功能中，将Telnet客户端进行勾选并点击“确定”
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/7.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 （7）按照如下步骤，在终端进行Telnet配置计费,Win+R打开运行输入“cmd”打开命令控制符  
 &emsp;输入：输入：telnet ＋华为eSpace的IP地址  
 &emsp;例如：telnet 192.168.6.7
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/8.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 输入账号密码登录成功后
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/9.png').default} alt=""/>
@@ -53,7 +53,7 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 
 &emsp;打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置  
 &emsp;<span class="red">注意：在打开之前，右键单机“BillCommon”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：</span>
-<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/11.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/11.png').default} alt=""/>
 
 ### 1、服务器设置
 
@@ -61,8 +61,8 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 <span class="red">注：此IP地址要与IPPBX地址互联互通</span>  
 数据库信息-IP地址：localhost，测试连接---成功---保存
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/12.png').default} alt="" style={{maxWidth: "50%"}}/>
-<br /><br /><br />
-<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/13.png').default} alt="" style={{marginLeft:"8em" ,maxWidth: "40%"}}/>
+<br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/13.png').default} alt="" style={{maxWidth: "40%"}}/>
 
 
 ### 2、配重登录页面
@@ -71,16 +71,16 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 &emsp;选上记住密码和自动登录，点击登录
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/14.png').default} alt="" style={{maxWidth: "50%"}}/>
 
-<br /><br /><br />
+<br />
 （2）下图为管理端首页面
-<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/15.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/15.png').default} alt=""/>
 
 ### 3、系统设置
 
 （1）资费参数  
 &emsp;运营商设置，默认区号是北京，可以右键修改，下拉列表选择区号或手动输入。例如：
-<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/16.png').default} alt="" style={{maxWidth: "80%"}}/>
-<br /><br /><br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/16.png').default} alt=""/>
+<br />
 
 （2）出局码设置  
 &emsp;点击中继信息，程序默认是9，需要修改，点击出局码修改，然后保存即可
@@ -98,7 +98,7 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
   &emsp;然后点击“保存”  
   &emsp;举例如下图所示：
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/18.png').default} alt=""/>
-<br /><br /><br /> 
+<br /> 
 
 （4）设置参数说明（华为）  
 
@@ -106,7 +106,7 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
   交换机型号：<span class="red">eSpace19xx</span>  
   话单文件路径：<span class="red">需要指定到eSpace网关IP地址</span>
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/19.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 （5）点击“保存”---然后“启动”
 
@@ -119,12 +119,12 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/20.png').default} alt=""/>
 <br />
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/21.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 （2）统一网关鉴权  
 &emsp;点击“控制”，再点击“统一网关鉴权”是否开启鉴权，选择：	关（建议把鉴权关闭，防止多个网关冲突）
 <img src={require('@site/static/img/softwareInstall/Standalone/Huawei/1/22.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 （3）重启CDR组件  
 &emsp;重启：点击“系统”，关闭所有；再点击“系统”，启动所有

@@ -13,13 +13,13 @@ import IPAddressConfig from '@site/src/components/IPAddressConfig';
 网关接通电源，连接好网络，获取网关初始IP地址，登录网关  
 登录默认密码是：admin  
 举例如下图所示：
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/2/1.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/2/1.png').default} alt=""/>
 
 ### 2、基本设置---网络
 
 连接方式下拉选择“固定IP地址”，IP地址填写网关IP地址；  
 <span class="blue">例如：192.168.6.137</span>，下面的字段要与网关字段相同，然后点击“保存”
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/2/2.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/2/2.png').default} alt=""/>
 
 ### 3、外线设置---SIP外线
 
@@ -29,38 +29,38 @@ SIP服务器是阿尔卡特的IP地址，如：192.168.6.39
 号码：5550，用户名：5550，  
 并发通道数为10（可以自己设置），密码：自己常用密码即可  
 确定保存
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/1.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/1.png').default} alt=""/>
 
 
 参考5550，再“新增”一条号码为“5551”、“5552”和“556”的SIP线路，并发通道数：10  
 5550用于叫醒、5551用于房态迷你吧，5552用于语音信箱，556用于话务台  
 <span class="red">（并发通道数根据需求设置即可）</span>  
  如下图所示：
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/2.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/2.png').default} alt=""/>
 
 ### 4、基本设置---拨号规则
 
 外呼规则：  
 下拉选择：“SIP外线顺选”，然后在右边勾选SIP外线线路5550，设置好保存数据
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/3.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/3.png').default} alt=""/>
 
 ### 5、应用服务---API
 
 服务器地址是安装中间件服务器IP地址加端口号8989  
 <span class="blue">例如：192.168.6.27:8989  </span>
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/4.png').default} alt="" style={{maxWidth: "80%"}}/>
-<br /><br /><br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/4.png').default} alt=""/>
+<br />
 
 设置下面的API功能开关  
 点击下面的SIP外线，把来电应答后控制和状态监控都选上，然后保存
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/5.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/5.png').default} alt=""/>
 
 ### 6、基本设置---语音管理
 &emsp;有话务台功能时，上传录音提示文件（防止拨打接入码打入话务台，无法呼入），选择上传欢迎词，把录好的文件放在C盘根目录下，点击上传，文件上传成功即可（提示：文件大小最好不要超过2M）上传uaer_blank和uaer_blank2，点击下方链接即可下载语音文件  
 <span style={{marginLeft:"7em"}}><a href={require('@site/static/vedio/user_blank.wav').default} download>• user_blank.wav</a></span>
-<span style={{marginLeft:"8em"}}><a href={require('@site/static/vedio/user_blank2.wav').default} download>• user_blank2.wav</a></span>
+<span style={{}}><a href={require('@site/static/vedio/user_blank2.wav').default} download>• user_blank2.wav</a></span>
 <br />
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/6.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/6.png').default} alt=""/>
 
 
 ### 7、分机设置---IP分机
@@ -70,11 +70,11 @@ SIP服务器是阿尔卡特的IP地址，如：192.168.6.39
 设置后当阿尔卡特上的分机号码无人接听或忙线时即会转移至此语音信箱  
 按照创建8888IP分机的步骤重新创建一个话务台号码8886  
 <span claa="red">（8886在网管上配置好后，同时也要在话机上进行注册）</span>
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/7.png').default} alt="" style={{maxWidth: "80%"}}/>
-<br /><br /><br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/7.png').default} alt=""/>
+<br />
 
 再点击“设置”，按下图修改
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/8.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/8.png').default} alt=""/>
 
 {/* 
 ### 8、高级设置---路由表（语音信箱）
@@ -100,7 +100,7 @@ FXS #99x ROUTE IP   192.168.6.130:5060
 ### 9、应用服务---媒体（语音信箱）
 
 编解码修改为：G.711U/20,G.711A/20（使留言声音更清晰）
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/11.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/11.png').default} alt=""/>
 
 
 ### 10、安全---安全配置
@@ -108,13 +108,13 @@ FXS #99x ROUTE IP   192.168.6.130:5060
 勾选启用“允许SSH访问”  
 并把SSH两个访问身份root和operator都设置好访问密码（两个访问身份密码最好一致）  
 举例如下图所示：
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/12.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/12.png').default} alt=""/>
 
 ## 二、配置交换机通讯管理系统
 
 &emsp;打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置  
 &emsp;<span class="red">注意：在打开之前，右键单机“BillCommon”选择“属性”勾选“以管理员身份运行”，操作如下图：</span>
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/13.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/13.png').default} alt=""/>
 
 ### 1、服务器设置
 
@@ -122,26 +122,26 @@ FXS #99x ROUTE IP   192.168.6.130:5060
 <span class="red">注：此IP地址要与IPPBX地址互联互通</span>  
 数据库信息-IP地址：localhost，测试连接---成功---保存
 <img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/14.png').default} alt="" style={{maxWidth: "50%"}}/>
-<br /><br /><br />
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/15.png').default} alt="" style={{marginLeft:"8em" ,maxWidth: "40%"}}  />
+<br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/15.png').default} alt="" style={{maxWidth: "40%"}}  />
 
 ### 2、配置登录页面
 
 （1）用户名：admin，密码：88888  
 &emsp;选上记住密码和自动登录，点击登录
 <img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/16.png').default} alt="" style={{maxWidth: "50%"}}/>
-<br /><br /><br />
+<br />
 
 
 （2）下图为管理端首页面  
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/17.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/17.png').default} alt=""/>
 
 ### 3、系统设置
 
 （1）资费参数  
 运营商设置，默认区号是北京，可以右键修改，下拉列表选择区号或手动输入。例如：
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/18.png').default} alt="" style={{maxWidth: "80%"}}/>
-<br /><br /><br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/18.png').default} alt=""/>
+<br />
 
 （2）出局码设置  
 点击中继信息，程序默认是9，需要修改，点击出局码修改，然后保存即可
@@ -159,7 +159,7 @@ URL：<span class="red">http:/<span>/服务</span>器IP地址:<span>7788</span>/
 密码：<span class="red">api（默认）</span>  
 <span class="red">（用户名密码在阿尔卡特---PBX---常规设置---API接口设置中查看）</span>
 <img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/20.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 填写完毕后点击<span class="red">保存，启动</span>
 <img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/21.png').default} alt=""/>
@@ -244,7 +244,7 @@ SIP服务器：填写的是网关IP地址与端口号等信息
 <img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/29.png').default} alt=""/>
 <img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/30.png').default} alt=""/>
 
-<br /><br /><br />
+<br />
 
 &emsp;<span class="red">注意：在阿尔拉特PBX---SIP设置---中继设置中的SIP端口号，要与网关中SIP外线账号的SIP服务器端口号保持一致</span>  
 &emsp;如下图所示
@@ -271,26 +271,26 @@ DID匹配模式：5503301-5503309</span>
 <span class="red">
 &emsp;注意：在打开之前，右键单机“交换机通讯管理系统话务台”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：
 </span>
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/37.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/37.png').default} alt=""/>
 
 ### 1、服务器设置
 
 打开话务台客户端配置，首先配置"服务器设置"
 <img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/38.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 服务器地址：填写交换机通讯管理系统服务器IP地址  
 数据库IP地址：填写交换机通讯管理系统服务器IP地址  
 点击“测试连接“连接成功之后，保存
 <img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/39.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 用户名：admin；密码：88888；点击登陆即可
 <img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/40.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 进入“话务台”客户端页面
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/41.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/41.png').default} alt=""/>
 
 <span class="red">
 &emsp;注：酒店版话务台一般不涉及“强插”“强拆”功能，并且企业通讯录一般使用较频繁，可在HotelManagement.exe.configw文件中进行参数修改。修改如下：
@@ -302,11 +302,11 @@ DID匹配模式：5503301-5503309</span>
 \<add key="ForcedHide" value="true" />  
 在HotelManagement.exe.configw文件中进行参数修改。修改如下：
 
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/42.png').default} alt="" style={{maxWidth: "80%"}}/>
-<br /><br /><br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/42.png').default} alt=""/>
+<br />
 
 修改后界面图：
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/43.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/43.png').default} alt=""/>
 
 ### 2、设置话机信息
 
@@ -314,12 +314,12 @@ DID匹配模式：5503301-5503309</span>
 设置话务员话机信息  
 通话方式有两种：手柄模式和耳机模式   根据需求设置即可  
 如下图
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/44.png').default} alt=""  style={{maxWidth: "80%"}}/>
-<br /><br /><br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/44.png').default} alt="" />
+<br />
 
 设置话务员话机信息，如下图：  
 注：话机密码是登录网页后台的密码  
-<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/45.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Alcatel/3/45.png').default} alt=""/>
 
 
 最后保存并重启客户端

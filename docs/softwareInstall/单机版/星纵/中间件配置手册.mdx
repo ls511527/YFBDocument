@@ -10,20 +10,20 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 ### 1、上传叫醒提示文件
 
 登录星纵后台，上传叫醒文件（中文、日文、韩文、英文版）
-<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/1.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/1.png').default} alt=""/>
 
 ### 2、呼出路由
 
 
 在“呼叫控制”中选择“呼出路由”，按照：内线、市话、国内长途、国际长途，添加呼出路由。  
 <span class="red">注：控制分机呼叫等级，呼出路由需按下图填写</span>
-<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/2.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/2.png').default} alt=""/>
 
 ## 二、配置交换机通讯管理系统
 
 &emsp;打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置  
 &emsp;<span class="red">注意：在打开之前，右键单机“BillCommon”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：</span>
-<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/3.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/3.png').default} alt=""/>
 
 
 ### 1、服务器设置
@@ -32,8 +32,8 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 <span class="red">注：此IP地址要与IPPBX地址互联互通</span>  
 数据库信息-IP地址：localhost，测试连接---成功---保存
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/4.png').default} alt="" style={{maxWidth: "50%"}}/>
-<br /><br /><br />
-<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/5.png').default} alt="" style={{maxWidth: "40%" ,marginLeft:"8em"}} />
+<br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/5.png').default} alt="" style={{maxWidth: "40%"}} />
 
 
 
@@ -42,10 +42,10 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 (1) 用户名：admin，密码：88888  
 &emsp;选上记住密码和自动登录，点击登录
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/6.png').default} alt="" style={{maxWidth: "50%"}}/>
-<br /><br /><br />
+<br />
 
 (2) 下图为管理端首页面
-<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/7.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/7.png').default} alt=""/>
 
 
 
@@ -54,22 +54,22 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 ### （1）数据库相关配置
 1）右键单击交换机通讯管理系统---打开文件所在的位置
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/8.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 2）右键解压Navicat8，解压到当前文件夹
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/9.png').default} alt=""/>
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/10.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 
 3）解压完成后进入Navicat8文件夹，点击navicat应用程序
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/11.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 
 4）对billcommonstandard中的s_appconfig进行配置
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/12.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 
 
@@ -77,17 +77,17 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 MySqlData,192.168.6.170,cdr,p43CT0QL,Huawei@123,3306
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/13.png').default} alt=""/>
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/14.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 
 6）配置好后关闭s_appconfig表，对刚才配置好的数据库进行测试
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/15.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 
 7）连接成功则表示配置无误
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/16.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 8）打开刚测试好的数据库中的cdr表查看是否存在通话记录
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/17.png').default} alt=""/>
@@ -108,9 +108,9 @@ MySqlData,192.168.6.170,cdr,p43CT0QL,Huawei@123,3306
 
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/18.png').default} alt="" />
 <strong style={{marginLeft:"26em"}}>CDR连接</strong>
-<br /><br /><br />
+<br />
 
-<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/19.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/19.png').default} alt=""/>
 <strong style={{marginLeft:"22em"}}>Ippbx数据库授权信息</strong>
 
 
@@ -128,9 +128,9 @@ enable密码：空
 
 <img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/20.png').default} alt="" style={{marginLeft:"11em" ,maxWidth: "60%"}}/>
 <strong style={{marginLeft:"25em"}}>PMSI连接</strong>
-<br /><br /><br />
+<br />
 
-<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/21.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/21.png').default} alt=""/>
 <strong style={{marginLeft:"22em"}}>星纵pbx二次开发接口</strong>
 
 
@@ -138,6 +138,6 @@ enable密码：空
 ### 5、叫醒次数设置
 
 在“业务参数”中选择“叫醒设置”，根据项目需求进行修改并保存即可。
-<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/22.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Yeastar/3/22.png').default} alt=""/>
 
 

@@ -1,16 +1,30 @@
-p {
+/* p {
   margin-left: 2em;
   font-size: 20px;
-}
+} */
 
 .red {
     color:red;
 }
 
 .blue {
-    color:blue;
+    color: blue !important;;
 }
 
 img:not(.custom-logo) {
   margin-left: 6em;
+}
+
+.markdown p{
+  font-size: 20px;
+  color: #333;
+  line-height: 1.8;
+  margin-left: 2em;
+}
+
+.markdown img{
+  display: block;
+  margin: 1.2em auto;   /* 自动左右居中 */
+  max-width: 80%;       /* 防止超出屏幕 */
+  height: auto;
 }

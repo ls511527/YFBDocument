@@ -12,7 +12,7 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 点击添加客户端，新增HTTP API的连接账号  
 用户名： <span class="red">user_xuyh</span>  
 密码：<span class="red">gs4008111108</span>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/1.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/1.png').default} alt=""/>
 
 
 ### 2、添加API的访问控制
@@ -23,18 +23,18 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 ### 3、系统时间
 系统管理---系统时间  
 系统时间和服务器时间要一致，点击设为PC时间
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/3.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/3.png').default} alt=""/>
 
 
 ## 二、配置交换机通讯管理系统
 先在C盘新建一文件夹，命名为CDRfILE，存放生成的计费文件
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/4.png').default} alt="" style={{maxWidth: "80%"}}/>
-<br /><br /><br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/4.png').default} alt=""/>
+<br />
 
 
 &emsp;打开“中间件基础管理系统”所安装的“BillCommon”，并对其进行设置  
 &emsp;<span class="red">注意：在打开之前，右键单机“BillCommon”选择“属性”---“兼容性”---勾选“以管理员身份运行”，操作如下图：</span>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/5.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/5.png').default} alt=""/>
 
 
 ### 1、服务器设置
@@ -42,18 +42,18 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 <span class="red">注：此IP地址要与IPPBX地址互联互通</span>  
 数据库信息-IP地址：localhost，测试连接---成功---保存
 <img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/6.png').default} alt="" style={{maxWidth: "50%"}}/>
-<br /><br /><br />
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/7.png').default} alt="" style={{marginLeft:"8em" ,maxWidth: "40%"}}/>
+<br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/7.png').default} alt="" style={{maxWidth: "40%"}}/>
 
 ### 2、配重登录页面
 (1)用户名：admin，密码：8888  
 选上记住密码和自动登录，点击登录
 <img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/8.png').default} alt="" style={{maxWidth: "50%"}}/>
-<br /><br /><br />
+<br />
 
 
 (2)下图为管理端首页面
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/9.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/9.png').default} alt=""/>
 
 
 ### 3、交换机设置
@@ -64,13 +64,13 @@ import '../../../../src/css/style.css'; // 导入 CSS 文件
 交换机型号：<span class="red">su系列</span>  
 通讯方式：<span class="red">文本文档</span>  
 计费文件路径：<span class="red">选择之前在C盘新建的CDRfILE文件夹</span>  
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/10.png').default} alt="" style={{maxWidth: "80%"}}/>
-<br /><br /><br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/10.png').default} alt=""/>
+<br />
 
 <strong>FTP设置</strong>  
 在电脑中输入ftp://星网IP:21/，看是否可以访问星网cdr文件
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/11.png').default} alt="" style={{maxWidth: "80%"}}/>
-<br /><br /><br />
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/11.png').default} alt=""/>
+<br />
 
 
 在【CDR连接】界面底部，点击【FTP设置】，按照下图进行设置  
@@ -97,7 +97,7 @@ IP地址：<span class="red">星网ippbx的IP地址</span>
 然后点击“保存”  
 举例如下图所示：
 <img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/13.png').default} alt="" style={{maxWidth: "70%"}}/>
-<br /><br /><br />
+<br />
 
 
 <strong>APT通讯连接</strong>  
@@ -106,7 +106,7 @@ IP地址：<span class="red">星网ippbx的IP地址</span>
 用户名：<span class="red">在星网ippbx上新建的HTTP API的连接账号</span>  
 密码：<span class="red">HTTP API的连接账号密码</span>  
 设置好后 点击“保存”
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/14.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/14.png').default} alt=""/>
 
 
 ### 4、通讯连接
@@ -116,7 +116,7 @@ IP地址：<span class="red">星网ippbx的IP地址</span>
 端口号：<span class="red">8180</span>  
 用户名：<span class="red">在星网ippbx上新建的HTTP API的连接账号</span>  
 密码：<span class="red">HTTP API的连接账号密码</span>  
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/15.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/15.png').default} alt=""/>
 
 
 ### 5、分机信息
@@ -136,7 +136,7 @@ IP地址：<span class="red">星网ippbx的IP地址</span>
 <span class="red">注：通常应选择存储空间剩余最大的分区（例如设置为D盘）。</span>  
 先点击保存再点击发布  
 <span class="red">最后点击“发布”按钮并重启服务端，这样web访问才能查听录音</span>
-<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/17.png').default} alt="" style={{maxWidth: "80%"}}/>
+<img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/17.png').default} alt=""/>
 
 
 ### 7、Web查听录音
@@ -144,7 +144,7 @@ IP地址：<span class="red">星网ippbx的IP地址</span>
 BillCommonSetupManage\Web\Web.config文件  
 如下图所示：
 <img src={require('@site/static/img/softwareInstall/Standalone/Starnet/2/18.png').default} alt=""/>
-<br /><br /><br />
+<br />
 
 <span class="red">
 注:“RecordIIS参数的默认值通常为value="ht<span>tp</span>://:10806"。建议先尝试保持此默认值进行测试，观察录音功能是否正常。  
