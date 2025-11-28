@@ -20,6 +20,8 @@ const config = {
   url: 'https://Molly-0305.github.io',   //可以将自己部署的网址域名写到这个上面
   baseUrl: '/YFBDocument/',     
 
+  
+
     // 添加或修改 staticDirectories 配置
   staticDirectories: [
     'public',

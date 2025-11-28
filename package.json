@@ -37,7 +37,8 @@
   "devDependencies": {
     "@craco/craco": "^7.1.0",
     "@docusaurus/module-type-aliases": "3.8.1",
-    "@docusaurus/types": "3.8.1"
+    "@docusaurus/types": "3.8.1",
+    "raw-loader": "^4.0.2"
   },
   "browserslist": {
     "production": [
