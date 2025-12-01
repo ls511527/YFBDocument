@@ -46,10 +46,10 @@ const config = {
 
 
   //设置语言：en:英语，zh-Hans:中文
-  i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['en', 'zh-Hans'],
-  },
+  // i18n: {
+  //   defaultLocale: 'zh-Hans',
+  //   locales: ['en', 'zh-Hans'],
+  // },
 
   //预设
   presets: [
