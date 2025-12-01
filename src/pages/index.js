@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             //点击模块后就如指定文档库
-            to="/softwareInstall/前期准备"> 
+            to="/softwareInstall/Windows 环境前期准备"> 
             进入部门知识库
           </Link>
         </div>
